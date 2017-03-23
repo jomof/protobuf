@@ -84,7 +84,7 @@ example: |
   #include<google/protobuf/util/type_resolver_util.h>                     
   #include<google/protobuf/util/message_differencer.h>
   void test() {
-    google::protobuf::util::MessageDifferencer(null, null);
+    google::protobuf::util::MessageDifferencer();
   }
    
 
