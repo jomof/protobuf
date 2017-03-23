@@ -1,7 +1,4 @@
-# Set builders to build system tool
-builders: [cmake]
+builders: [cmake, cmakeExamples]
 
-# Dependencies to download
 dependencies:
-# Uncomment next line to get header-only boost
-#- compile: com.github.jomof:boost:1.0.63-rev8
+- compile: build/zips/cdep-manifest.yml
