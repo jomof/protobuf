@@ -1,8 +1,8 @@
-matrix:
-  include:
-  - os: linux
-    script:
-    - pushd cdep
-    - ./cmakeify --group-id com.github.jomof --artifact-id protobuf --target-version ${TRAVIS_TAG:-0.0.0}
-    - ./cdep
-    - ./cmakeify -wf .cdep/examples/cmake
+language: c++
+os: 
+ - linux
+script:
+- pushd cdep
+- ./cmakeify --group-id com.github.jomof --artifact-id protobuf --target-version ${TRAVIS_TAG:-0.0.0}
+- ./cdep
+- ./cmakeify -wf .cdep/examples/cmake
