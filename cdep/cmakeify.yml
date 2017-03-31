@@ -1,10 +1,11 @@
-targets: [iOS, android, linux]
+targets: [android]
 buildTarget: protobuf
 cmakeFlags: -DCMAKE_CXX_FLAGS=\"-DHAVE_PTHREAD\"
 android:
   ndk:
-    runtimes: [c++, gnustl] # stlport doesn't have tr1/unordered_map
+    runtimes: [c++] # stlport doesn't have tr1/unordered_map
     platforms: [12, 21]
+    abis: [x86]
 example: |                     
   #include<google/protobuf/any.pb.h>                                      
   #include<google/protobuf/api.pb.h>                                      
