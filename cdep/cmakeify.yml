@@ -5,7 +5,7 @@ android:
   ndk:
     runtimes: [c++] # stlport doesn't have tr1/unordered_map
     platforms: [12, 21]
-    abis: [x86]
+    abis: [x86, armeabi]
 example: |                     
   #include<google/protobuf/any.pb.h>                                      
   #include<google/protobuf/api.pb.h>                                      
