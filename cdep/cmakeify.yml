@@ -1,6 +1,6 @@
 targets: [iOS, android, linux]
 buildTarget: protobuf
-cmakeFlags: -DCMAKE_CXX_FLAGS="-DHAVE_PTHREAD"
+cmakeFlags: -fPIC -DCMAKE_CXX_FLAGS="-DHAVE_PTHREAD"
 android:
   ndk:
     runtimes: [c++, gnustl] # stlport doesn't have tr1/unordered_map
