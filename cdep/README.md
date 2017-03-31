@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/jomof/sqlite.svg?branch=master)](https://travis-ci.org/jomof/sqlite)
-[![CDep Status](https://cdep-io.github.io/com.github.jomof/sqlite/latest/latest.svg)](https://github.com/jomof/sqlite/releases/latest)
+[![Build Status](https://travis-ci.org/jomof/protobuf.svg?branch=master)](https://travis-ci.org/jomof/protobuf)
+[![CDep Status](https://cdep-io.github.io/com.github.jomof/protobuf/latest/latest.svg)](https://github.com/jomof/protobuf/releases/latest)
 
-# CDep SqlLite package
+# CDep Protobuf package
 
 
 
