@@ -2,20 +2,20 @@ language: c++
 
 matrix:
   include:
-  - os: linux
-    env: TARGET_OS=linux
-    addons:
-      apt:
-        sources:
-        - ubuntu-toolchain-r-test
-        packages:
-        - gcc-4.8
-        - g++-4.8
-    script:
-    - pushd cdep
-    - ./cmakeify --group-id com.github.jomof --artifact-id protobuf --target-version ${TRAVIS_TAG:-0.0.0} --target-os linux
-    - ./cdep
-    - ./cmakeify -wf .cdep/examples/cmake --target-os linux
+#  - os: linux
+#    env: TARGET_OS=linux
+#    addons:
+#      apt:
+#        sources:
+#        - ubuntu-toolchain-r-test
+#        packages:
+#        - gcc-4.8
+#        - g++-4.8
+#    script:
+#    - pushd cdep
+#    - ./cmakeify --group-id com.github.jomof --artifact-id protobuf --target-version ${TRAVIS_TAG:-0.0.0} --target-os linux
+#    - ./cdep
+#    - ./cmakeify -wf .cdep/examples/cmake --target-os linux
   
   - os: linux
     env: TARGET_OS=android
@@ -25,10 +25,10 @@ matrix:
     - ./cdep
     - ./cmakeify -wf .cdep/examples/cmake --target-os android
   
-  - os: osx
-    env: TARGET_OS=iOS
-    script:
-    - pushd cdep
-    - ./cmakeify --group-id com.github.jomof --artifact-id protobuf --target-version ${TRAVIS_TAG:-0.0.0} --target-os iOS
-    - ./cdep
-    - ./cmakeify -wf .cdep/examples/cmake --target-os iOS
+#  - os: osx
+#    env: TARGET_OS=iOS
+#    script:
+#    - pushd cdep
+#    - ./cmakeify --group-id com.github.jomof --artifact-id protobuf --target-version ${TRAVIS_TAG:-0.0.0} --target-os iOS
+#    - ./cdep
+#    - ./cmakeify -wf .cdep/examples/cmake --target-os iOS
