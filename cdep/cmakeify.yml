@@ -1,4 +1,4 @@
-targets: [iOS, android]
+targets: [iOS, android, linux]
 buildTarget: protobuf
 android:
   ndk:
