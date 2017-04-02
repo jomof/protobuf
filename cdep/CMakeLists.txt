@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.7)
 project(protobuf)
 set(SOURCE_ROOT "../src")
 add_library(protobuf STATIC 
-  ${SOURCE_ROOT}/google/protobuf/stubs/atomicops_internals_x86_gcc.cc        
-  ${SOURCE_ROOT}/google/protobuf/stubs/atomicops_internals_x86_msvc.cc       
+#  ${SOURCE_ROOT}/google/protobuf/stubs/atomicops_internals_x86_gcc.cc        
+#  ${SOURCE_ROOT}/google/protobuf/stubs/atomicops_internals_x86_msvc.cc       
   ${SOURCE_ROOT}/google/protobuf/stubs/bytestream.cc                          
   ${SOURCE_ROOT}/google/protobuf/stubs/common.cc                              
   ${SOURCE_ROOT}/google/protobuf/stubs/int128.cc                              
